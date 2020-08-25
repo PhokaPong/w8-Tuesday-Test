@@ -1,31 +1,31 @@
-class Complex {
-  int num1;
-  int num2;
-  int i ;
+class complex {
+  float num1;
+  float num2;
+  float i ;
   char operator;
-  int result;
-  Complex(int Num1, int Num2, int I, char ope, int Result) {
+  float result;
+  complex(float Num1, float Num2, float I, char ope, int Result) {
     num1 = Num1;
     num2 = Num2;
     operator = ope;
     i = I;
     result = Result;
-    I =sqrt(-1)
+    I =sqrt(-1);
   }
   void calComplex() {
-    if (operator == "+") {
+    if (operator == '+') {
       result = num1+(num2*i);
       println(result);
     }
-    else if (operator == "-") {
+    else if (operator == '-') {
       result = num1-(num2*i);
       println(result);
     }
-    else if (operator == "*") {
+    else if (operator == '*') {
       result = num1*(num2*i);
       println(result);
     }
-    else if (operator == "/") {
+    else if (operator == '/') {
       result = num1/(num2*i);
       println(result);
     }
